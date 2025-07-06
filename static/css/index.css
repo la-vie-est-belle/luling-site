@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+
+    scrollbar-width: none;
+    scrollbar-color: #3b82f6 #f0f0f0;
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* WebKit（Chrome/Safari） */
+html::-webkit-scrollbar {
+  display: none; /* 完全隐藏滚动条 */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #be223a;
+    color: white;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-links li {
+    margin-left: 0.8rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+}
+
+.content {
+    /* padding: 2rem 0;
+    min-height: 100vh; */
+}
+
+.block1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-a.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+#home-block1-title {
+    font-size: 145px;
+    font-weight: bold;
+    color: white;
+}
+
+#home-block1-subtitle {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+
+.block2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-b.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+#block2-slogan-zh {
+    font-size: 145px;
+    font-weight: bold;
+    color: white;
+}
+
+#block2-slogan-en {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+
+.block1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-a.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+.game-row-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 8rem;
+}
+
+.game-item-text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+
+.game-item-button {
+    background: linear-gradient(to right, #52dcff, #00c8ff);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.game-item-button:hover {
+    animation: grow 0.5s infinite alternate;
+}
+
+/* 定义动画 */
+@keyframes grow {
+  from {
+    transform: scale(1); /* 初始大小，例如100% */
+  }
+  to {
+    transform: scale(1.2); /* 最终大小，例如200% */
+  }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
